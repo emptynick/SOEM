@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_LIST_DIR}/cmake/Modules")
 project(SOEM
     DESCRIPTION "Simple Open EtherCAT Master"
@@ -106,8 +107,5 @@ install(FILES
   DESTINATION ${SOEM_INCLUDE_INSTALL_DIR})
 
 if(BUILD_TESTS) 
-  add_subdirectory(test/simple_ng)
-  add_subdirectory(test/linux/slaveinfo)
-  add_subdirectory(test/linux/eepromtool)
-  add_subdirectory(test/linux/simple_test)
+  add_subdirectory(test/linux/soemlib)
 endif()

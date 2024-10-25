@@ -1,0 +1,21 @@
+EXPORTS
+    soem_open
+    soem_close
+    soem_config
+    soem_getDeviceCount
+    soem_getExpectedInputWorkingCount
+    soem_getExpectedOutputWorkingCount
+    soem_getCurrentState
+    soem_getState
+    soem_getALStatusCode
+    soem_getALStatusDesc
+    soem_requestState
+    soem_getName
+    soem_transferPDO
+    soem_getInputPDO
+    soem_setOutputPDO
+    soem_getOutputBits
+    soem_getInputBits
+    soem_findAdapters
+    soem_getAdapterName
+    soem_getAdapterDesc

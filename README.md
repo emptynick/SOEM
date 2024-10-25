@@ -20,6 +20,8 @@ Windows (Visual Studio)
    * `cmake .. -G "NMake Makefiles"`
    * `nmake`
 
+   If CMake is not found, run the following in the command prompt: `set PATH="C:\Program Files\CMake\bin\";%PATH%`
+
 Linux & macOS
 --------------
 
